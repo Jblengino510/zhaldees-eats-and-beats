@@ -4,6 +4,9 @@ import { Routes, Route, useNavigate } from 'react-router-dom'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import LandingPage from './LandingPage';
 import NavBar from './NavBar';
+import Venue from './Venue'
+import Media from './Media'
+import Contact from './Contact'
 
 
 const theme = createTheme({
@@ -26,6 +29,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <NavBar />
       <Routes>
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/media' element={<Media />} />
+        <Route path='/venue' element={<Venue />} />
         <Route path='/' element={<LandingPage />} />
       </Routes>
     </ThemeProvider>
