@@ -5,7 +5,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import LandingPage from './LandingPage';
 import NavBar from './NavBar';
 import Venue from './Venue'
-import Media from './Media'
+import About from './About'
 import Contact from './Contact'
 
 
@@ -19,7 +19,11 @@ const theme = createTheme({
     }
   },
   typography: {
-    fontFamily: 'Inter (Bold)'
+    fontFamily: 'Work Sans',
+    fontWeightLight: 400,
+    fontWeightRegular: 500,
+    fontWeightMedium: 600,
+    fontWeightBold: 700,
   }
 })
 
@@ -30,7 +34,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path='/contact' element={<Contact />} />
-        <Route path='/media' element={<Media />} />
+        <Route path='/about' element={<About />} />
         <Route path='/venue' element={<Venue />} />
         <Route path='/' element={<LandingPage />} />
       </Routes>

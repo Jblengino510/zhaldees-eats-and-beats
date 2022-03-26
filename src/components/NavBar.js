@@ -25,11 +25,11 @@ function NavBar() {
                             <Button variant='text' color='secondary' size='large' onClick={() => navigate('/')} sx={{mr: '40px', borderRadius: '0px', '&:hover': {cursor: 'pointer', background: 'none', color: 'rgba(255,255,255,.4)'}}}>
                                 <strong>Home</strong>
                             </Button>
+                            <Button variant='text' color='secondary' size='large' onClick={() => navigate('/about')} sx={{mr: '40px', borderRadius: '0px', '&:hover': {cursor: 'pointer', background: 'none', color: 'rgba(255,255,255,.4)'}}}>
+                                <strong>About</strong>
+                            </Button>
                             <Button variant='text' color='secondary' size='large' onClick={() => navigate('/venue')} sx={{mr: '40px', borderRadius: '0px', '&:hover': {cursor: 'pointer', background: 'none', color: 'rgba(255,255,255,.4)'}}}>
                                 <strong>Venue</strong>
-                            </Button>
-                            <Button variant='text' color='secondary' size='large' onClick={() => navigate('/media')} sx={{mr: '40px', borderRadius: '0px', '&:hover': {cursor: 'pointer', background: 'none', color: 'rgba(255,255,255,.4)'}}}>
-                                <strong>Media</strong>
                             </Button>
                             <Button variant='text' color='secondary' size='large' href='https://www.zhaldeeseatsandbeats.com/' target='_blank' sx={{mr: '40px', borderRadius: '0px', '&:hover': {cursor: 'pointer', background: 'none', color: 'rgba(255,255,255,.4)'}}}>
                                 <strong>Catering</strong>
