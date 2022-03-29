@@ -24,7 +24,22 @@ const theme = createTheme({
     fontWeightRegular: 500,
     fontWeightMedium: 600,
     fontWeightBold: 700,
-  }
+  },
+  components: {
+    MuiTextField: {
+      styleOverrides: {
+        root: {
+          borderRadius: 0,
+          border: '2px solid #000000',
+        }
+      }
+    },
+    MuiButtonBase: {
+      defaultProps: {
+        disableRipple: true
+      }
+    }
+  },
 })
 
 
