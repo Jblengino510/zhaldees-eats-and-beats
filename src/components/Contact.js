@@ -19,7 +19,8 @@ function Contact() {
 
   return (
     <>
-        <Grid container direction='row' justifyContent='center' alignItems='center' sx={{mt: '200px', bgcolor: '#1b1b1b', height: '100vh'}}>
+      <Box sx={{mt: '200px', bgcolor: '#1b1b1b', height: '100vh'}}>
+        <Grid container direction='row' justifyContent='center' alignItems='center'>
           <Grid item xs={6} sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
             <Box sx={{margin: '100px 0px', width: '100%', height: '400px', width: '600px'}}>
                 <ReactMapGL 
@@ -38,6 +39,7 @@ function Contact() {
             </Box>
           </Grid>
         </Grid>
+      </Box>
     </>
   )
 }

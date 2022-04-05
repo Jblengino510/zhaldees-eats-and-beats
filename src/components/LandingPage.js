@@ -11,26 +11,26 @@ function LandingPage() {
     <>
       <Box className='video-wrapper'>
         <video src='/djmixing.mp4' autoPlay loop muted type='video/mp4'/>
-        <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}}>
+        <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start', height: '25vh'}}>
           <Typography variant='h3' sx={{ml: '50px'}}>
             A SAFE & INCLUSIVE EVENT SPACE
           </Typography>
-          <Typography variant='h4' sx={{ml: '50px', mb: '50px', fontWeight: '200'}}>
+          <Typography variant='h4' sx={{ml: '50px', fontWeight: '200'}}>
             serving the Alameda community.
           </Typography>
         </Box>
       </Box>
-      <Box>
-        <Grid container direction='row' justifyContent='space-evenly' alignItems='center' textAlign='center' sx={{height: '100vh', bgcolor: '#000000', paddingTop: '300px'}}>
+      <Box sx={{height: '100vh', bgcolor: '#000000', paddingTop: '300px'}}>
+        <Grid container direction='row' justifyContent='space-evenly' alignItems='center' textAlign='center'>
           <Grid item xs={12} sx={{mb: '50px'}}>
-            <Typography variant='h2'>
+            <Typography variant='h2' sx={{fontWeight: '500'}}>
               A BLANK CANVAS
             </Typography>
           </Grid>
           <Grid item xs={12} sx={{mb: '50px'}}>
             <Container>
               <Typography variant='h5' sx={{fontWeight: '300'}}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
+                Whether it's a private party, tech meetup, community gathering, art showcase, or whether you are a local DJ that needs the proper equipment to stream on Twitch, or a videographer who needs a creative space to shoot a music video, we will work with you to bring your vision to life.
               </Typography>
             </Container>
           </Grid>
