@@ -20,7 +20,6 @@ html, body {
   background-color: rgba(0,0,0,.4);
   background-image: linear-gradient(0deg, #000, transparent);
   background-blend-mode: multiply;
-  color: white;
   display: flex;
   flex-direction: row;
   align-items: flex-end;

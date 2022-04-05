@@ -16,6 +16,9 @@ const theme = createTheme({
     },
     secondary: {
       main: '#FFFFFF'
+    },
+    text: {
+      primary: '#FFFFFF'
     }
   },
   typography: {
@@ -31,12 +34,20 @@ const theme = createTheme({
         root: {
           borderRadius: 0,
           border: '2px solid #000000',
+          '&:hover': { border: '2px solid #FFFFFF' }
         }
       }
     },
     MuiButtonBase: {
       defaultProps: {
         disableRipple: true
+      }
+    },
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          color: '#FFFFFF'
+        }
       }
     }
   },

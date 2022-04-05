@@ -27,11 +27,11 @@ function ContactForm() {
 
   return (
     <form ref={form} onSubmit={handleInquiry} style={{width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-      <TextField label='First Name*' name='firstname' variant='outlined' color='secondary' required sx={{width: '50%'}} onChange={(e) => setFirstname(e.target.value)}/>
+      <TextField label='First Name' name='firstname' variant='outlined' color='secondary' required sx={{width: '50%'}} onChange={(e) => setFirstname(e.target.value)}/>
       <br />
-      <TextField label='Last Name*' name='lastname' variant='outlined' color='secondary' required sx={{width: '50%'}} onChange={(e) => setLastname(e.target.value)}/>
+      <TextField label='Last Name' name='lastname' variant='outlined' color='secondary' required sx={{width: '50%'}} onChange={(e) => setLastname(e.target.value)}/>
       <br />
-      <TextField label='Email*' name='email' variant='outlined' color='secondary' required sx={{width: '50%'}} onChange={(e) => setEmail(e.target.value)}/>
+      <TextField label='Email' name='email' variant='outlined' color='secondary' required sx={{width: '50%'}} onChange={(e) => setEmail(e.target.value)}/>
       <br />
       <TextField label='Phone Number' name='phonenumber' variant='outlined' color='secondary' required sx={{width: '50%'}} onChange={(e) => setPhonenumber(e.target.value)}/>
       <br />

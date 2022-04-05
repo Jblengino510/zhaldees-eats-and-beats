@@ -12,8 +12,8 @@ function LandingPage() {
       <Box className='video-wrapper'>
         <video src='/djmixing.mp4' autoPlay loop muted type='video/mp4'/>
         <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}}>
-          <Typography variant='h2' sx={{ml: '50px'}}>
-            A safe & inclusive event space
+          <Typography variant='h3' sx={{ml: '50px'}}>
+            A SAFE & INCLUSIVE EVENT SPACE
           </Typography>
           <Typography variant='h4' sx={{ml: '50px', mb: '50px', fontWeight: '200'}}>
             serving the Alameda community.
@@ -21,10 +21,10 @@ function LandingPage() {
         </Box>
       </Box>
       <Box>
-        <Grid container direction='row' justifyContent='space-evenly' alignItems='center' textAlign='center' sx={{height: '100vh', bgcolor: '#000000', color: 'white', paddingTop: '300px'}}>
+        <Grid container direction='row' justifyContent='space-evenly' alignItems='center' textAlign='center' sx={{height: '100vh', bgcolor: '#000000', paddingTop: '300px'}}>
           <Grid item xs={12} sx={{mb: '50px'}}>
             <Typography variant='h2'>
-              A Blank Canvas
+              A BLANK CANVAS
             </Typography>
           </Grid>
           <Grid item xs={12} sx={{mb: '50px'}}>
