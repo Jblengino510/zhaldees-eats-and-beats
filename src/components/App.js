@@ -7,6 +7,7 @@ import NavBar from './NavBar';
 import Venue from './Venue'
 import About from './About'
 import Contact from './Contact'
+import ScrollToTop from './ScrollToTop'
 
 
 const theme = createTheme({
@@ -57,6 +58,7 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      <ScrollToTop />
       <NavBar />
       <Routes>
         <Route path='/contact' element={<Contact />} />
