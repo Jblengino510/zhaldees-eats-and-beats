@@ -7,6 +7,7 @@ import NavBar from './NavBar';
 import Venue from './Venue'
 import About from './About'
 import Contact from './Contact'
+import Footer from './Footer'
 import ScrollToTop from './ScrollToTop'
 
 
@@ -66,6 +67,7 @@ function App() {
         <Route path='/venue' element={<Venue />} />
         <Route path='/' element={<LandingPage />} />
       </Routes>
+      <Footer />
     </ThemeProvider>
   );
 }
