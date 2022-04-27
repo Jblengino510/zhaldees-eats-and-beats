@@ -12,13 +12,13 @@ function About() {
           <Grid item xs={12} sx={{mt: '100px'}}>
             <Container>
                 <Typography variant='h4' sx={{fontWeight: '600'}}>
-                  Eats & Beats is food.
+                  Eats & Beats is Food.
                 </Typography>
                 <Typography variant='h4' sx={{fontWeight: '600'}}>
-                  Eats & Beats is music.
+                  Eats & Beats is Music.
                 </Typography>
                 <Typography variant='h4' sx={{fontWeight: '600'}}>
-                  Eats & Beats is an event space.
+                  Eats & Beats is an Event Space.
                 </Typography>
                 <br />
                 <br />

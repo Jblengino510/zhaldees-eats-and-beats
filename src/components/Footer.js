@@ -1,6 +1,8 @@
 import React from 'react'
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
+import Card from '@mui/material/Card';
+
 
 
 function Footer() {
@@ -27,8 +29,16 @@ function Footer() {
                 </Typography>
             </Grid>
             <Grid item xs={2} sx={{mt: '50px', display: 'flex', justifyContent: 'center'}}>
-                <img src='/instagram.png' alt='Instagram Logo' width='50px' height='50px' style={{marginRight: '10px'}}/>
-                <img src='/twitch.png' alt='Twitch Logo' width='50px' height='50px' />
+                <Card sx={{bgcolor: '#000000', display: 'flex', flexDirection: 'column', alignItems: 'center', mr: '10px'}}>
+                    <a href='https://www.instagram.com/zhaldeeseatsandbeats/?hl=en' target='_blank'>
+                        <img src='/instagram.png' alt='Instagram Logo' width='50px' height='50px' />
+                    </a>
+                </Card>
+                <Card sx={{bgcolor: '#000000', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+                    <a href='https://www.twitch.tv/zhaldee' target='_blank'>
+                        <img src='/twitch.png' alt='Twitch Logo' width='50px' height='50px' />
+                    </a>
+                </Card>
             </Grid>
             <Grid item xs={4}></Grid>
             <Grid item xs={6}></Grid>
