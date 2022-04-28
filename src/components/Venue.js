@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -10,6 +11,9 @@ import TableBarIcon from '@mui/icons-material/TableBar';
 import SquareFootIcon from '@mui/icons-material/SquareFoot';
 
 function Venue() {
+  const navigate = useNavigate()
+
+
   return (
     <>
       <Box sx={{mt: '200px', width: '100%', height: '75vh', backgroundImage: 'linear-gradient(0deg, #000, transparent), url(/venue1.jpg)', backgroundSize: 'cover', backgroundBlendMode: 'multiply', display: 'flex', alignItems: 'flex-end'}}>
@@ -164,7 +168,7 @@ function Venue() {
         </Typography>
         <br />
         <br />
-        <Button variant='outlined' size='large'sx={{border: '2px solid #FFFFFF', borderRadius: '0px', width: '15%', bgcolor: 'transparent', color: 'white', paddingTop: '20px', paddingBottom: '20px', '&:hover': { border: '3px solid white'}}}>
+        <Button variant='outlined' size='large'sx={{border: '2px solid #FFFFFF', borderRadius: '0px', width: '15%', bgcolor: 'transparent', color: 'white', paddingTop: '20px', paddingBottom: '20px', '&:hover': { border: '3px solid white'}}} onClick={() => navigate('/contact')}>
           <strong>Contact</strong>
         </Button>
       </Box>
