@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
@@ -9,21 +9,67 @@ import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import EventSeatIcon from '@mui/icons-material/EventSeat';
 import TableBarIcon from '@mui/icons-material/TableBar';
 import SquareFootIcon from '@mui/icons-material/SquareFoot';
+import IconButton from '@mui/material/IconButton';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 function Venue() {
   const navigate = useNavigate()
+  const [ index, setIndex ] = useState(0)
+  const [ images, setImages ] = useState([
+    {
+      src: '/ZNB-1.jpeg',
+      alt: '1'
+    },
+    {
+      src: '/ZNB-2.jpeg',
+      alt: '2'
+    },
+    {
+      src: '/ZNB-3.jpeg',
+      alt: '3'
+    },
+    {
+      src: '/ZNB-4.jpeg',
+      alt: '4'
+    },
+    {
+      src: '/ZNB-5.jpeg',
+      alt: '5'
+    },
+  ])
+
+
+  function nextImage() {
+    if (index !== images.length - 1) setIndex(index + 1)
+  }
+
+  function prevImage() {
+    if (index > 0) setIndex(index - 1)
+  }
 
 
   return (
     <>
-      <Box sx={{mt: '200px', width: '100%', height: '75vh', backgroundImage: 'linear-gradient(0deg, #000, transparent), url(/venue1.jpg)', backgroundSize: 'cover', backgroundBlendMode: 'multiply', display: 'flex', alignItems: 'flex-end'}}>
-        <Box sx={{height: '25vh'}}>
+      <Box className='carousel'>
+        <Box sx={{bgcolor: '', height: '70%', position: 'absolute', zIndex: '3', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end'}}>
           <Typography variant='h3' sx={{ml: '50px', fontWeight: '600'}}>
-            CUSTOMIZABLE SPACE
+            A CUSTOMIZABLE SHOW ROOM & SPACE  
           </Typography>
           <Typography variant='h4' sx={{ml: '50px', fontWeight: '200'}}>
             to fit your event needs.
           </Typography>
+        </Box>
+        <Box sx={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '100%'}}>
+          <IconButton className='carousel-button prev' aria-label='Arrow Backwards' color='secondary' size='large' onClick={prevImage} disabled={index === 0 ? true : false}>
+            <ArrowBackIcon sx={{ fontSize: 80 }}/>
+          </IconButton>
+          <IconButton className='carousel-button next' aria-label='Arrow Forward' color='secondary' size='large' onClick={nextImage} disabled={index !== images.length - 1 ? false : true}>
+            <ArrowForwardIcon sx={{ fontSize: 80 }}/>
+          </IconButton>
+        </Box>
+        <Box className='slide' data-active>
+          {images.map(image => <img src={image.src} alt={image.alt} />)[index]}
         </Box>
       </Box>
       <Box>
