@@ -15,21 +15,21 @@ function NavBar() {
 
   return (
     <>
-        <AppBar position='fixed' elevation={0} sx={{background: '#000000', width: '100vw', padding: '20px'}}>
+        <AppBar position='sticky' elevation={0} sx={{background: '#000000', width: '100vw', padding: '20px'}}>
             <Toolbar>
+                <Box sx={{display: { sm: 'flex', md: 'none', lg: 'none'}}}>
+                    <IconButton color='secondary' size='large'>
+                        <MenuIcon sx={{ fontSize: 40 }}/>
+                    </IconButton>
+                </Box>
                 <Grid container direction='column' justifyContent='center' alignItems='center'>
-                    <Grid item xs={12}>
-                        <IconButton color='secondary' size='large' sx={{display: { sm: 'block', med: 'none', lg: 'none'}}}>
-                            <MenuIcon sx={{ fontSize: 40 }}/>
-                        </IconButton>
-                    </Grid>
-                    <Grid item xs={12}>
+                    <Grid item xs={6} sm={6} md={12}>
                         <Link to='/'>
                             <img src='/ZEAB-logo-no-background.png' alt='Eats and Beats Logo' width='400px'/>
                         </Link>
                     </Grid>
                     <Grid item xs={12}>
-                        <Box sx={{mt: '20px', mb: '20px', display: { sm: 'none', med: 'block', lg: 'block' }}}>
+                        <Box sx={{mt: '20px', mb: '20px', display: { sm: 'none', md: 'block', lg: 'block' }}}>
                             <Button variant='text' color='secondary' size='large' onClick={() => navigate('/')} sx={{mr: '40px', borderRadius: '0px', '&:hover': {cursor: 'pointer', background: 'none', color: 'rgba(255,255,255,.4)'}}}>
                                 <strong>Home</strong>
                             </Button>

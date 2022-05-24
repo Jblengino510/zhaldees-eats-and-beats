@@ -20,7 +20,7 @@ function Contact() {
 
   return (
     <>
-      <Box sx={{mt: '200px', bgcolor: '#1b1b1b', height: '30vh'}}>
+      <Box sx={{bgcolor: '#1b1b1b', height: '30vh'}}>
         <Grid container direciton='column' justifyContent='center' alignItems='center' textAlign='center'>
           <Grid item xs={12} sx={{mt: '100px'}}>
               <Container>

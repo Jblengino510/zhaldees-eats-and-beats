@@ -7,7 +7,7 @@ import Container from '@mui/material/Container';
 function About() {
   return (
     <>
-      <Box sx={{mt: '200px', width: '100%', height: '100vh', backgroundImage: 'url(/ZNB-2.jpeg)', backgroundSize: 'cover', backgroundBlendMode: 'multiply', display: 'flex', alignItems: 'flex-end'}}>
+      <Box sx={{width: '100%', height: '100vh', backgroundImage: 'url(/ZNB-2.jpeg)', backgroundSize: 'cover', backgroundBlendMode: 'multiply', display: 'flex', alignItems: 'flex-end'}}>
         <Box sx={{height: '50vh'}}>
           <Typography variant='h3' sx={{ml: '50px', fontWeight: '600'}}>
             Eats & Beats is Food.

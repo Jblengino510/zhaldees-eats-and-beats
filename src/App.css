@@ -12,7 +12,6 @@ html, body {
 }
 
 .video-wrapper {
-  margin-top: 200px;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -48,7 +47,6 @@ html, body {
   width: 100vw;
   height: 100vh;
   position: relative;
-  margin-top: 200px;
 }
 
 .carousel-button {
