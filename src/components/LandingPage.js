@@ -5,20 +5,21 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
+import { motion } from 'framer-motion'
 
 function LandingPage() {
   return (
     <>
       <Box className='video-wrapper'>
-        <video src='/djmixing.mp4' autoPlay loop muted type='video/mp4'/>
-        <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start', height: '25vh'}}>
+        <motion.video initial={{ opacity: 0 }} animate={{ opacity: 1}} transition={{ delay: 1 }} src='/djmixing.mp4' autoPlay loop muted type='video/mp4'/>
+        <motion.div initial={{ y: '100vh', opacit: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 2 }} style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start', height: '25vh'}}>
           <Typography variant='h3' sx={{ml: '50px', fontWeight: '600'}}>
             A SAFE & INCLUSIVE EVENT SPACE
           </Typography>
           <Typography variant='h4' sx={{ml: '50px', fontWeight: '200'}}>
             serving the Alameda community.
           </Typography>
-        </Box>
+        </motion.div>
       </Box>
       <Box sx={{height: '100vh', bgcolor: '#000000', paddingTop: '300px'}}>
         <Grid container direction='row' justifyContent='space-evenly' alignItems='center' textAlign='center'>

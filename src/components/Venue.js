@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
@@ -12,6 +12,7 @@ import SquareFootIcon from '@mui/icons-material/SquareFoot';
 import IconButton from '@mui/material/IconButton';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { motion } from 'framer-motion'
 
 function Venue() {
   const navigate = useNavigate()
@@ -52,14 +53,14 @@ function Venue() {
   return (
     <>
       <Box className='carousel'>
-        <Box sx={{bgcolor: '', height: '70%', position: 'absolute', zIndex: '3', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end'}}>
+        <motion.div initial={{ y: '100vh', opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 2 }} style={{backgroundColor: '', height: '70%', position: 'absolute', zIndex: '2', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end'}}>
           <Typography variant='h3' sx={{ml: '50px', fontWeight: '600'}}>
-            A CUSTOMIZABLE SHOW ROOM & SPACE  
+            A SHOW ROOM & EVENT SPACE  
           </Typography>
           <Typography variant='h4' sx={{ml: '50px', fontWeight: '200'}}>
             to fit your event needs.
           </Typography>
-        </Box>
+        </motion.div>
         <Box sx={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '100%'}}>
           <IconButton className='carousel-button prev' aria-label='Arrow Backwards' color='secondary' size='large' onClick={prevImage} disabled={index === 0 ? true : false}>
             <ArrowBackIcon sx={{ fontSize: 80 }}/>
@@ -68,9 +69,9 @@ function Venue() {
             <ArrowForwardIcon sx={{ fontSize: 80 }}/>
           </IconButton>
         </Box>
-        <Box className='slide' data-active>
+        <motion.div initial={{ opacity: 0}} animate={{ opacity: 1 }} transition={{ delay: 1 }} className='slide' data-active>
           {images.map(image => <img src={image.src} alt={image.alt} />)[index]}
-        </Box>
+        </motion.div>
       </Box>
       <Box>
         <Grid container>
@@ -83,11 +84,11 @@ function Venue() {
       </Box>
       <Box sx={{height: '50vh'}}>
         <Grid container sx={{bgcolor: '#000000'}}>
-          <Grid item xs={6}>
+          <Grid item xs={12} md={6}>
             <Box sx={{backgroundImage: 'url(/mic-mixer.jpeg)', backgroundSize: 'cover', height: '50vh', margin: 'auto 100px'}}>
             </Box>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} md={6}>
             <Box sx={{height: '50vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', margin: 'auto 100px'}}>
               <Typography variant='h4'>
                 Audio Visual Solutions
@@ -103,7 +104,7 @@ function Venue() {
       <Box sx={{height: '25vh', bgcolor: '#000000'}}></Box>
       <Box sx={{height: '50vh'}}>
         <Grid container sx={{bgcolor: '#000000'}}>
-          <Grid item xs={6}>
+          <Grid item xs={12} md={6}>
             <Box sx={{height: '50vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', margin: 'auto 100px'}}>
               <Typography variant='h4'>
                 DJ / Emcee
@@ -114,7 +115,7 @@ function Venue() {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} md={6}>
             <Box sx={{backgroundImage: 'url(/turntables.jpeg)', backgroundSize: 'cover', height: '50vh', margin: 'auto 100px'}}>
             </Box>
           </Grid>
@@ -123,11 +124,11 @@ function Venue() {
       <Box sx={{height: '25vh', bgcolor: '#000000'}}></Box>
       <Box sx={{height: '50vh'}}>
         <Grid container sx={{bgcolor: '#000000'}}>
-          <Grid item xs={6}>
+          <Grid item xs={12} md={6}>
             <Box sx={{backgroundImage: 'url(/lighting-equipment.jpeg)', backgroundSize: 'cover', height: '50vh', margin: 'auto 100px'}}>
             </Box>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} md={6}>
             <Box sx={{height: '50vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', margin: 'auto 100px'}}>
               <Typography variant='h4'>
                 Lighting
@@ -143,7 +144,7 @@ function Venue() {
       <Box sx={{height: '25vh', bgcolor: '#000000'}}></Box>
       <Box sx={{height: '50vh'}}>
         <Grid container sx={{bgcolor: '#000000'}}>
-          <Grid item xs={6}>
+          <Grid item xs={12} md={6}>
             <Box sx={{height: '50vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', margin: 'auto 100px'}}>
               <Typography variant='h4'>
                 High Speed Internet
@@ -157,7 +158,7 @@ function Venue() {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} md={6}>
             <Box sx={{backgroundImage: 'url(/wifi.jpeg)', backgroundSize: 'cover', height: '50vh', margin: 'auto 100px'}}>
             </Box>
           </Grid>

@@ -3,8 +3,11 @@ import { Link, useNavigate } from 'react-router-dom'
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
+
 
 function NavBar() {
     const navigate = useNavigate()
@@ -16,12 +19,17 @@ function NavBar() {
             <Toolbar>
                 <Grid container direction='column' justifyContent='center' alignItems='center'>
                     <Grid item xs={12}>
+                        <IconButton color='secondary' size='large' sx={{display: { sm: 'block', med: 'none', lg: 'none'}}}>
+                            <MenuIcon sx={{ fontSize: 40 }}/>
+                        </IconButton>
+                    </Grid>
+                    <Grid item xs={12}>
                         <Link to='/'>
                             <img src='/ZEAB-logo-no-background.png' alt='Eats and Beats Logo' width='400px'/>
                         </Link>
                     </Grid>
                     <Grid item xs={12}>
-                        <Box sx={{mt: '20px', mb: '20px'}}>
+                        <Box sx={{mt: '20px', mb: '20px', display: { sm: 'none', med: 'block', lg: 'block' }}}>
                             <Button variant='text' color='secondary' size='large' onClick={() => navigate('/')} sx={{mr: '40px', borderRadius: '0px', '&:hover': {cursor: 'pointer', background: 'none', color: 'rgba(255,255,255,.4)'}}}>
                                 <strong>Home</strong>
                             </Button>
