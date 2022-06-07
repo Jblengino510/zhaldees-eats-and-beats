@@ -9,20 +9,20 @@ function About() {
     <>
       <Box sx={{width: '100%', height: '100vh', backgroundImage: 'url(/ZNB-2.jpeg)', backgroundSize: 'cover', backgroundBlendMode: 'multiply', display: 'flex', alignItems: 'flex-end'}}>
         <Box sx={{height: '50vh'}}>
-          <Typography variant='h3' sx={{ml: '50px', fontWeight: '600'}}>
+          <Typography variant='h3' sx={{ml: '50px', fontWeight: '600', fontSize: { xs: '1.6rem', sm: '2rem', md: '2.55rem', lg: '3rem' }}}>
             Eats & Beats is Food.
           </Typography>
-          <Typography variant='h3' sx={{ml: '50px', fontWeight: '600'}}>
+          <Typography variant='h3' sx={{ml: '50px', fontWeight: '600', fontSize: { xs: '1.6rem', sm: '2rem', md: '2.55rem', lg: '3rem' }}}>
             Eats & Beats is Music.
           </Typography>
-          <Typography variant='h3' sx={{ml: '50px', fontWeight: '600'}}>
+          <Typography variant='h3' sx={{ml: '50px', fontWeight: '600', fontSize: { xs: '1.6rem', sm: '2rem', md: '2.55rem', lg: '3rem' }}}>
             Eats & Beats is an Event Space.
           </Typography>
         </Box>
       </Box>
       <Box sx={{width: '100%', height: '100vh', bgcolor: '#000000'}}>
         <Grid container direction='column' justifyContent='center' alignItems='center' textAlign='center'>
-          <Grid item xs={12} sx={{mt: '100px'}}>
+          <Grid item xs={12} sx={{mt: '200px'}}>
             <Container>
                 <Typography variant='h5' sx={{fontWeight: '300'}}>
                   We are event planners, audio/visual technicians, DJs, and chefs. We host corporate gatherings, private parties, weddings and art receptions. We provide you with the tools you need to help stream your creative content on digital platforms such as Twitch or YouTube. We offer the perfect place for your next pop-up food concept, or can supply catering when you’d rather let us do the cooking. We work closely with local non-profit organizations that help our community, and donate meals to families in need.
@@ -40,11 +40,9 @@ function About() {
                 </Typography>
               </Container>
           </Grid>
-          <Grid item xs={12}></Grid>
-          <Grid item xs={12}></Grid>
-          <Grid item xs={12}></Grid>
         </Grid>
       </Box>
+      <Box sx={{display: { xs: 'block', md: 'none' }, height: '25vh', bgcolor: '#000'}}></Box>
     </>
   )
 }
