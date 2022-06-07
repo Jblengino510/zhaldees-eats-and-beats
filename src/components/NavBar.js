@@ -37,7 +37,7 @@ function NavBar() {
 
   return (
     <>
-        <AppBar position='sticky' elevation={0} sx={{background: '#000000', width: '100vw', padding: '20px'}}>
+        <AppBar position='sticky' elevation={0} sx={{background: '#000', width: '100vw', padding: '40px 0px'}}>
             <Toolbar>
                 <Box sx={{display: { sm: 'flex', md: 'none', lg: 'none'}}}>
                     <IconButton color='secondary' size='large' aria-controls={open ? 'demo-positioned-menu' : undefined} aria-haspopup="true"  aria-expanded={open ? 'true' : undefined} onClick={handleClick}>
@@ -104,13 +104,15 @@ function NavBar() {
                         </Menu>
                 </Box>
                 <Grid container direction='column' justifyContent='center' alignItems='center'>
-                    <Grid item xs={6} sm={6} md={12}>
+                    <Grid item xs={12}>
                         <Link to='/'>
-                            <img src='/ZEAB-logo-no-background.png' alt='Eats and Beats Logo' width='400px'/>
+                            <Box sx={{width: { xs: '200px', sm: '400px' }}}>
+                                <img src='/ZEAB-logo-no-background.png' alt='Eats and Beats Logo' className='responsive'/>
+                            </Box>
                         </Link>
                     </Grid>
                     <Grid item xs={12}>
-                        <Box sx={{mt: '20px', mb: '20px', display: { sm: 'none', md: 'block', lg: 'block' }}}>
+                        <Box sx={{mt: '20px', display: { xs: 'none', md: 'block', lg: 'block' }}}>
                             <Button variant='text' color='secondary' size='large' onClick={() => navigate('/')} sx={{mr: '40px', borderRadius: '0px', '&:hover': {cursor: 'pointer', background: 'none', color: 'rgba(255,255,255,.4)'}}}>
                                 <strong>Home</strong>
                             </Button>
