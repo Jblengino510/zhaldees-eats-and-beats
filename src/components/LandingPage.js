@@ -30,7 +30,7 @@ function LandingPage() {
           </Grid>
           <Grid item xs={12} sx={{mb: '50px'}}>
             <Container>
-              <Typography variant='h5' sx={{fontWeight: '300', fontSize: { xs: '1rem', sm: '1.5rem' }}}>
+              <Typography variant='h5' sx={{fontWeight: '300'}}>
                 Whether it's a private party, corporate meeting, community gathering, art showcase, or whether you are a local DJ that needs the proper equipment to stream on Twitch, or an up and coming chef who needs space for a pop-up event, we will work with you to bring your vision to life.
               </Typography>
             </Container>

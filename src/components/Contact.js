@@ -24,7 +24,7 @@ function Contact() {
         <Grid container direciton='column' justifyContent='center' alignItems='center' textAlign='center'>
           <Grid item xs={12} sx={{mt: '100px'}}>
               <Container>
-                <Typography variant='h3' sx={{fontWeight: '600'}}>
+                <Typography variant='h3' sx={{fontWeight: '600', fontSize: { xs: '1.6rem', sm: '2rem', md: '2.55rem', lg: '3rem' }}}>
                   HOW IT WORKS
                 </Typography>
                 <br />
@@ -38,8 +38,8 @@ function Contact() {
       </Box>
       <Box sx={{bgcolor: '#1b1b1b', height: '100vh'}}>
         <Grid container direction='row' justifyContent='center' alignItems='center'>
-          <Grid item xs={12} sm={12} md={12} lg={6} sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-            <Box sx={{margin: '100px 0px', width: '100%', height: '400px', width: '600px'}}>
+          <Grid item xs={12} lg={6} sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+            <Box sx={{margin: { xs: '100px', lg: '100px auto'}, width: { xs: '70%', lg: '500px', xl: '600px' }, height: '400px'}}>
                 <ReactMapGL 
                   {...viewport}
                   mapStyle="mapbox://styles/jblengino/cl17jav1h001z14lm4wlaimtk"
@@ -50,13 +50,14 @@ function Contact() {
                 </ReactMapGL>
             </Box>
           </Grid>
-          <Grid item xs={12} sm={12} md={12} lg={6} sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-            <Box sx={{margin: '100px 0px', width: '100%'}}>
+          <Grid item xs={12} lg={6} sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+            <Box sx={{margin: { xs: '100px', lg: '100px auto'}, width: '100%'}}>
               <ContactForm />
             </Box>
           </Grid>
         </Grid>
       </Box>
+      <Box sx={{display: { xs: 'block', lg: 'none' }, height: '50vh', bgcolor: '#1b1b1b'}}></Box>
     </>
   )
 }
