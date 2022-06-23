@@ -37,7 +37,7 @@ function NavBar() {
 
   return (
     <>
-        <AppBar position='sticky' elevation={0} sx={{background: '#000', width: '100vw', padding: '40px 0px'}}>
+        <AppBar position='sticky' elevation={0} sx={{background: '#000', width: '100%', padding: '40px 0px'}}>
             <Toolbar>
                 <Box sx={{display: { sm: 'flex', md: 'none', lg: 'none'}}}>
                     <IconButton color='secondary' size='large' aria-controls={open ? 'demo-positioned-menu' : undefined} aria-haspopup="true"  aria-expanded={open ? 'true' : undefined} onClick={handleClick}>
