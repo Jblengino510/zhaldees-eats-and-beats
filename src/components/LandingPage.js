@@ -13,10 +13,10 @@ function LandingPage() {
       <Box className='video-wrapper'>
         <motion.video initial={{ opacity: 0 }} animate={{ opacity: 1}} transition={{ delay: 1 }} src='/djmixing.mp4' autoPlay loop muted type='video/mp4'/>
         <motion.div initial={{ y: '100vh', opacit: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 2 }} style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start', height: '25vh'}}>
-          <Typography variant='h3' sx={{ml: { xs: '75px', md: '50px' }, fontWeight: '600', fontSize: { xs: '1rem', sm: '2rem', md: '2.55rem', lg: '3rem' }}}>
+          <Typography variant='h3' sx={{ml: { xs: '75px', sm: '50px' }, fontWeight: '600', fontSize: { xs: '1rem', sm: '1.5rem', md: '2.55rem', lg: '3rem' }}}>
             A SAFE & INCLUSIVE EVENT SPACE
           </Typography>
-          <Typography variant='h4' sx={{ml: { xs: '75px', md: '50px' }, fontWeight: '200', fontSize: { xs: '1rem', md: '2rem' }}}>
+          <Typography variant='h4' sx={{ml: { xs: '75px', sm: '50px' }, fontWeight: '200', fontSize: { xs: '1rem', sm: '1.5rem', md: '2rem' }}}>
             serving the Alameda community.
           </Typography>
         </motion.div>
@@ -24,13 +24,13 @@ function LandingPage() {
       <Box sx={{height: '100vh', bgcolor: '#000000', paddingTop: '300px'}}>
         <Grid container alignItems='center' textAlign='center' sx={{flexDirection: { xs: 'column', md: 'row'}, justifyContent: { xs: 'center', md: 'space-evenly' }}}>
           <Grid item xs={12} sx={{mb: '50px'}}>
-            <Typography variant='h2' sx={{fontWeight: '600', fontSize: { xs: '1rem', sm: '2rem', md: '2.55rem', lg: '4rem' }}}>
+            <Typography variant='h2' sx={{fontWeight: '600', fontSize: { xs: '1rem', sm: '1.5rem', md: '2.55rem', lg: '4rem' }}}>
               A BLANK CANVAS
             </Typography>
           </Grid>
           <Grid item xs={12} sx={{mb: '50px'}}>
-            <Container sx={{width: { xs: '50%'}}}>
-              <Typography variant='h5' sx={{fontWeight: '300', fontSize: { xs: '1rem', sm: '2rem', md: '2.55rem', lg: '4rem' }}}>
+            <Container sx={{width: { xs: '75%' }}}>
+              <Typography variant='h5' sx={{fontWeight: '300', fontSize: { xs: '1rem', sm: '1.2rem', md: '2.55rem', lg: '4rem' }}}>
                 Whether it's a private party, corporate meeting, community gathering, art showcase, or whether you are a local DJ that needs the proper equipment to stream on Twitch, or an up and coming chef who needs space for a pop-up event, we will work with you to bring your vision to life.
               </Typography>
             </Container>
@@ -79,8 +79,7 @@ function LandingPage() {
       </Box>
       <Box sx={{height: { xs: '100vh', md: '50vh' }, bgcolor: '#000', border: 'none'}}></Box>
       <Box sx={{display: { xs: 'block', md: 'none' }, height: { xs: '100vh' }, bgcolor: '#000', border: 'none'}}></Box>
-      <Box sx={{display: { xs: 'block', md: 'none' }, height: { xs: '25vh' }, bgcolor: '#000', border: 'none'}}></Box>
-      
+      <Box sx={{display: { xs: 'block', md: 'none' }, height: { xs: '25vh', sm: '100vh' }, bgcolor: '#000', border: 'none'}}></Box>
     </>
   )
 }

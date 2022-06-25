@@ -10,28 +10,28 @@ function Footer() {
   return (
     <footer style={{width: '100%', height: '100%', backgroundColor: '#1B1B1B', padding: '100px 0px'}}>
         <Grid container direction='row' justifyContent='space-around' alignItems='center'>
-            <Grid item xs={12} md={2} sx={{display: 'flex', justifyContent: { xs: 'flex-start', md: 'center' }, ml: { xs: '50px', md: '0px' }}}>
+            <Grid item xs={12} lg={2} sx={{display: 'flex', justifyContent: { xs: 'flex-start', lg: 'center' }, ml: { xs: '50px', lg: '0px' }}}>
                 <img src='/Z-logo-white.png' alt='Eats & Beats Logo' width='100px' height='100px' />
             </Grid>
             <Box sx={{display: { xs: 'block', lg: 'none' }, height: '10vh', bgcolor: '#1b1b1b'}}></Box>
-            <Grid item xs={12} md={4} sx={{ml: { xs: '50px', md: '0px' }}}>
-                <Typography variant='h6' sx={{fontWeight: '300', fontSize: { xs: '1rem', sm: '2rem', md: '2.55rem', lg: '4rem' }}}>
+            <Grid item xs={12} lg={4} sx={{ml: { xs: '50px', lg: '0px' }}}>
+                <Typography variant='h6' sx={{fontWeight: '300', fontSize: { xs: '1rem', sm: '1.2rem' }}}>
                     <strong>1517 Webster St, Alameda CA 94501</strong>
                 </Typography>
-                <Typography variant='h6' sx={{fontWeight: '300', fontSize: { xs: '1rem', sm: '2rem', md: '2.55rem', lg: '4rem' }}}>
+                <Typography variant='h6' sx={{fontWeight: '300', fontSize: { xs: '1rem', sm: '1.2rem' }}}>
                     <strong>Phone: (510) 213-2525</strong>
                 </Typography>
-                <Typography variant='h6' sx={{fontWeight: '300', fontSize: { xs: '1rem', sm: '2rem', md: '2.55rem', lg: '4rem' }}}>
+                <Typography variant='h6' sx={{fontWeight: '300', fontSize: { xs: '1rem', sm: '1.2rem' }}}>
                     <strong>Email: zhaldee@gmail.com</strong>
                 </Typography>
             </Grid>
             <Box sx={{display: { xs: 'block', lg: 'none' }, height: '10vh', bgcolor: '#1b1b1b'}}></Box>
-            <Grid item xs={12} md={6} sx={{ml: { xs: '50px', md: '0px' }}}>
-                <Typography variant='h6' sx={{fontWeight: '300', fontSize: { xs: '1rem', sm: '2rem', md: '2.55rem', lg: '4rem' }, width: { xs: '75%', sm: '100%'}}}>
+            <Grid item xs={12} lg={5} sx={{ml: { xs: '50px', lg: '0px' }}}>
+                <Typography variant='h6' sx={{fontWeight: '300', fontSize: { xs: '1rem', sm: '1.2rem' }, width: { xs: '75%', md: '100%'}}}>
                     We are Zhaldee’s Eats & Beats — a full-service events and catering company supporting the community of Alameda and the greater Bay Area since 2017. Welcome to our home!
                 </Typography>
             </Grid>
-            <Grid item xs={12} md={3} sx={{mt: '50px', display: 'flex', justifyContent: 'center'}}>
+            <Grid item xs={12} lg={3} sx={{mt: '50px', display: 'flex', justifyContent: 'center'}}>
                 <Card sx={{bgcolor: '#000000', display: 'flex', flexDirection: 'column', alignItems: 'center', mr: '10px', padding: '5px'}}>
                     <a href='https://www.instagram.com/zhaldeeseatsandbeats/?hl=en' target='_blank'>
                         <img src='/instagram.png' alt='Instagram Logo' width='50px' height='50px' />

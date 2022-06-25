@@ -39,7 +39,7 @@ function NavBar() {
     <>
         <AppBar position='sticky' elevation={0} sx={{background: '#000', width: '100%', padding: '40px 0px'}}>
             <Toolbar>
-                <Box sx={{display: { sm: 'flex', md: 'none' }, ml: { xs: '40px', md: '0px' }}}>
+                <Box sx={{display: { xs: 'flex', md: 'none' }, ml: { xs: '40px', sm: '0px' }}}>
                     <IconButton color='secondary' size='large' aria-controls={open ? 'demo-positioned-menu' : undefined} aria-haspopup="true"  aria-expanded={open ? 'true' : undefined} onClick={handleClick}>
                         <MenuIcon sx={{ fontSize: 40 }}/>
                     </IconButton>
@@ -107,7 +107,7 @@ function NavBar() {
                 <Grid container direction='column' justifyContent='center' alignItems='center'>
                     <Grid item xs={12}>
                         <Link to='/'>
-                            <Box sx={{width: { xs: '200px', sm: '300px', md: '400px' }}}>
+                            <Box sx={{width: { xs: '200px', sm: '250px', md: '400px' }}}>
                                 <img src='/ZEAB-logo-no-background.png' alt='Eats and Beats Logo' className='responsive'/>
                             </Box>
                         </Link>
