@@ -39,7 +39,7 @@ function NavBar() {
     <>
         <AppBar position='sticky' elevation={0} sx={{background: '#000', width: '100%', padding: '40px 0px'}}>
             <Toolbar>
-                <Box sx={{display: { sm: 'flex', md: 'none' }, ml: { xs: '50px', md: '0px' }}}>
+                <Box sx={{display: { sm: 'flex', md: 'none' }, ml: { xs: '40px', md: '0px' }}}>
                     <IconButton color='secondary' size='large' aria-controls={open ? 'demo-positioned-menu' : undefined} aria-haspopup="true"  aria-expanded={open ? 'true' : undefined} onClick={handleClick}>
                         <MenuIcon sx={{ fontSize: 40 }}/>
                     </IconButton>

@@ -15,19 +15,19 @@ function Footer() {
             </Grid>
             <Box sx={{display: { xs: 'block', lg: 'none' }, height: '10vh', bgcolor: '#1b1b1b'}}></Box>
             <Grid item xs={12} md={4} sx={{ml: { xs: '50px', md: '0px' }}}>
-                <Typography variant='h6' sx={{fontWeight: '300'}}>
+                <Typography variant='h6' sx={{fontWeight: '300', fontSize: { xs: '1rem', sm: '2rem', md: '2.55rem', lg: '4rem' }}}>
                     <strong>1517 Webster St, Alameda CA 94501</strong>
                 </Typography>
-                <Typography variant='h6' sx={{fontWeight: '300'}}>
+                <Typography variant='h6' sx={{fontWeight: '300', fontSize: { xs: '1rem', sm: '2rem', md: '2.55rem', lg: '4rem' }}}>
                     <strong>Phone: (510) 213-2525</strong>
                 </Typography>
-                <Typography variant='h6' sx={{fontWeight: '300'}}>
+                <Typography variant='h6' sx={{fontWeight: '300', fontSize: { xs: '1rem', sm: '2rem', md: '2.55rem', lg: '4rem' }}}>
                     <strong>Email: zhaldee@gmail.com</strong>
                 </Typography>
             </Grid>
             <Box sx={{display: { xs: 'block', lg: 'none' }, height: '10vh', bgcolor: '#1b1b1b'}}></Box>
             <Grid item xs={12} md={6} sx={{ml: { xs: '50px', md: '0px' }}}>
-                <Typography variant='h6' sx={{fontWeight: '300'}}>
+                <Typography variant='h6' sx={{fontWeight: '300', fontSize: { xs: '1rem', sm: '2rem', md: '2.55rem', lg: '4rem' }, width: { xs: '75%', sm: '100%'}}}>
                     We are Zhaldee’s Eats & Beats — a full-service events and catering company supporting the community of Alameda and the greater Bay Area since 2017. Welcome to our home!
                 </Typography>
             </Grid>
