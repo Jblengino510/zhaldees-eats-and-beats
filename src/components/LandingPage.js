@@ -13,10 +13,10 @@ function LandingPage() {
       <Box className='video-wrapper'>
         <motion.video initial={{ opacity: 0 }} animate={{ opacity: 1}} transition={{ delay: 1 }} src='/djmixing.mp4' autoPlay loop muted type='video/mp4'/>
         <motion.div initial={{ y: '100vh', opacit: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 2 }} style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start', height: '25vh'}}>
-          <Typography variant='h3' sx={{ml: { xs: '25px', md: '50px' }, fontWeight: '600', fontSize: { xs: '1.6rem', sm: '2rem', md: '2.55rem', lg: '3rem' }}}>
+          <Typography variant='h3' sx={{ml: { xs: '75px' }, fontWeight: '600', fontSize: { xs: '1rem', sm: '2rem', md: '2.55rem', lg: '3rem' }}}>
             A SAFE & INCLUSIVE EVENT SPACE
           </Typography>
-          <Typography variant='h4' sx={{ml: { xs: '25px', md: '50px' }, fontWeight: '200', fontSize: { xs: '1.6rem', md: '2rem' }}}>
+          <Typography variant='h4' sx={{ml: { xs: '75px' }, fontWeight: '200', fontSize: { xs: '1rem', md: '2rem' }}}>
             serving the Alameda community.
           </Typography>
         </motion.div>
