@@ -57,7 +57,7 @@ function Venue() {
           <Typography variant='h3' sx={{ml: '50px', fontWeight: '600', fontSize: { xs: '1rem', sm: '1.5rem', md: '2.55rem', lg: '3rem' }}}>
             A SHOW ROOM & EVENT SPACE  
           </Typography>
-          <Typography variant='h4' sx={{ml: '50px', fontWeight: '200', fontSize: { xs: '1rem', sm: '1.5rem', md: '2.55rem', lg: '3rem' }}}>
+          <Typography variant='h4' sx={{ml: '50px', fontWeight: '200', fontSize: { xs: '1rem', sm: '1.5rem', md: '2rem' }}}>
             to fit your event needs.
           </Typography>
         </motion.div>

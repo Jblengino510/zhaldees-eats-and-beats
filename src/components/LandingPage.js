@@ -29,8 +29,8 @@ function LandingPage() {
             </Typography>
           </Grid>
           <Grid item xs={12} sx={{mb: '50px'}}>
-            <Container sx={{width: { xs: '75%' }}}>
-              <Typography variant='h5' sx={{fontWeight: '300', fontSize: { xs: '1rem', sm: '1.2rem', md: '2.55rem', lg: '4rem' }}}>
+            <Container sx={{width: { xs: '75%', lg: '100%' }}}>
+              <Typography variant='h5' sx={{fontWeight: '300', fontSize: { xs: '1rem', sm: '1.2rem', md: '1.5rem' }}}>
                 Whether it's a private party, corporate meeting, community gathering, art showcase, or whether you are a local DJ that needs the proper equipment to stream on Twitch, or an up and coming chef who needs space for a pop-up event, we will work with you to bring your vision to life.
               </Typography>
             </Container>
@@ -77,7 +77,7 @@ function LandingPage() {
           </Grid>
         </Grid>
       </Box>
-      <Box sx={{height: { xs: '100vh', md: '50vh' }, bgcolor: '#000', border: 'none'}}></Box>
+      <Box sx={{height: '100vh', bgcolor: '#000', border: 'none'}}></Box>
       <Box sx={{display: { xs: 'block', md: 'none' }, height: { xs: '100vh' }, bgcolor: '#000', border: 'none'}}></Box>
       <Box sx={{display: { xs: 'block', md: 'none' }, height: { xs: '25vh', sm: '100vh' }, bgcolor: '#000', border: 'none'}}></Box>
     </>
